@@ -114,7 +114,7 @@ void turnoJ1(char** matrix, int size, int x, int y, int x2, int y2) {
 		   matrix[x][y] == '+' && (x-1 == x2 && y+1 == y2)){
 			matrix[x2][y2] = '+';
 
-			if(matrix[x+1][y] == '#') {
+			/*if(matrix[x+1][y] == '#') {
 				matrix[x+1][y] = '+';
 			}
 			if(matrix[x-1][y] == '#') {
@@ -137,7 +137,8 @@ void turnoJ1(char** matrix, int size, int x, int y, int x2, int y2) {
 			}
 			if(matrix[x-1][y+1] == '#') {
 				matrix[x-1][y+1] = '+';
-			}
+			}*/
+
 		}else{
 			cout<<"No puede mover pieza"<<endl;
 		}
@@ -154,7 +155,7 @@ void turnoJ1(char** matrix, int size, int x, int y, int x2, int y2) {
 				matrix[x][y] = ' ';
 				matrix[x2][y2] = '+';
 
-				if(matrix[x+2][y] == '#') {
+				/*if(matrix[x+2][y] == '#') {
 					matrix[x+2][y] = '+';
 				}
 				if(matrix[x-2][y] == '#') {
@@ -177,7 +178,7 @@ void turnoJ1(char** matrix, int size, int x, int y, int x2, int y2) {
 				}
 				if(matrix[x-2][y+2] == '#') {
 					matrix[x-2][y+2] = '+';
-				}
+				}*/
 			}else{
 				cout<<"No puede mover pieza"<<endl;
 	
